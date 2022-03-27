@@ -33,6 +33,10 @@ export Qt6_DIR=/opt/Qt/6.2.4/gcc_64 #注意这句放在第二行会导致QtCreat
 
 ## 相关错误解决
 
+### Qt Creator无法使用中文
+
+见[Qt Creator无法使用中文](Qt%20Creator无法使用中文.md)
+
 ### Cmake找不到Qt6相关内容
 
 #### 1. 背景：`CMakeLists.txt`的内容：
