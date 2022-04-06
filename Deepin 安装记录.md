@@ -18,9 +18,11 @@
 - g++ 
 - cmake
 - dtk
+- net.qv2ray.qv2ray 
+- meson
 
 ```
-sudo apt install git g++ cmake libdtkcore-dev libdtkwidget-dev libdtkgui-dev qtcreator-template-dtk
+sudo apt install git g++ cmake libdtkcore-dev libdtkwidget-dev libdtkgui-dev qtcreator-template-dtk net.qv2ray.qv2ray meson
 
 ```
 
@@ -120,8 +122,8 @@ com.qv2ray
 
 控制中心-键盘和语言-输入法-高级设置-全局配置-更多快捷键-额外的切换首...改为左Shift
 
-#### 五笔莫名其秒消失了
-重新安装解决
+#### 五笔莫名其秒消失了 [解决办法]([Bug]%20fcitx-table-wubi.md)
+~~重新安装解决~~
 ```bash
 sudo apt install fcitx-table-wbpy fcitx-table-wubi
 ```
