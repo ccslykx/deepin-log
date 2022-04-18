@@ -20,6 +20,7 @@
 - dtk
 - net.qv2ray.qv2ray 
 - meson
+- R 参考[安装 R 4.0以上版本的方法](https://bbs.deepin.org/zh/post/234965)
 
 ```
 sudo apt install git g++ cmake libdtkcore-dev libdtkwidget-dev libdtkgui-dev qtcreator-template-dtk net.qv2ray.qv2ray meson
@@ -127,3 +128,14 @@ com.qv2ray
 ```bash
 sudo apt install fcitx-table-wbpy fcitx-table-wubi
 ```
+
+### 隐藏不想显示的分区（Windows分区）
+
+参考https://bbs.deepin.org/zh/post/234785
+
+1. 在终端中使用`lsblk -f`命令显示当前硬盘分区信息
+
+2. 在`/etc/udev/rules.d/hidden-partition.rules`（可能需要新建文件）中写入：
+    ```
+    ENV{ID_FS_UUID}=="步骤1显示的分区的UUID", ENV{UDISKS_IGNORE}="1"
+    ```
