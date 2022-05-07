@@ -53,3 +53,9 @@ sudo apt install qttools5-dev-tools qttools5-dev
 ```shell
 sudo apt install qtmultimedia5-dev
 ```
+
+### Could NOT find Boost (missing: filesystem)
+
+```shell
+sudo apt-get install libboost-all-dev   # thsi will install all teh required boost components. 
+```

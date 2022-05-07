@@ -18,3 +18,5 @@ ccslykx@deepin:~$
 ```shell
 sudo apt install -f
 ```
+
+##
