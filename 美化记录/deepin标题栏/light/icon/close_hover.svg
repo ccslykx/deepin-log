@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="32" width="32">
+   	<circle cx="16" cy="16" r="9" 
+			style="stroke:rgb(202,98,100);stroke-width:1;fill:rgb(245,90,84)" />
+   	<line x1="12" y1="12" x2="20" y2="20" 
+		  style="stroke:rgb(172,43,45);stroke-width:2;stroke-linecap:round" />
+	<line x1="20" y1="12" x2="12" y2="20" 
+		  style="stroke:rgb(172,43,45);stroke-width:2;stroke-linecap:round" />
+</svg> 

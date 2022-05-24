@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="32" width="32">
+   	<circle cx="16" cy="16" r="9" 
+			stroke="rgb(64,175,63)" 
+			stroke-width="1" 
+			fill="rgb(14,199,51)" />
+	<polygon points="11,13 11,21 19,21" 
+			 style="fill:rgb(2,103,1)" />
+	<polygon points="13,11 21,11 21,19" 
+			 style="fill:rgb(2,103,1)" />
+</svg> 
