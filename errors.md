@@ -37,6 +37,20 @@ sudo apt install libgl-dev
 
 但是我在`CMakeLists.txt`的`add_executable`里加入了头文件也无效，在删除`Q_OBJECT`宏定义后编译成功
 
+`CMakeLists.txt`里添加`set(CMAKE_AUTOMOC ON)`
+
+### 在Qt工程中，出现`expected unqualified-id before ‘)’ token`错误
+`libcamera`中的`slots()`函数名与Qt的宏定义`#define slots Q_SLOTS`冲突。
+```log
+In file included from /usr/local/include/libcamera/libcamera/camera.h:18,
+                 from /usr/local/include/libcamera/libcamera/libcamera.h:11,
+                 from /home/ccslykx/Projects/deepin-camera/build/src/deepin-camera_autogen/UVLADIE3JM/../../../../src/src/camera_libcamera.h:23,
+                 from /home/ccslykx/Projects/deepin-camera/build/src/deepin-camera_autogen/UVLADIE3JM/moc_camera_libcamera.cpp:10,
+                 from /home/ccslykx/Projects/deepin-camera/build/src/deepin-camera_autogen/mocs_compilation.cpp:6:
+/usr/local/include/libcamera/libcamera/base/signal.h:31:17: error: expected unqualified-id before ‘)’ token
+  SlotList slots();
+                 ^
+```
 
 
 ## cmake

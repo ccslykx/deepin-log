@@ -139,3 +139,6 @@ sudo apt install fcitx-table-wbpy fcitx-table-wubi
     ```
     ENV{ID_FS_UUID}=="步骤1显示的分区的UUID", ENV{UDISKS_IGNORE}="1"
     ```
+
+## 美化
+https://www.bilibili.com/read/cv13895363/
